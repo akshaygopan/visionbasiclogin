@@ -1,5 +1,5 @@
 import 'package:loginbasic/Animations/FadeAnimation.dart';
-import 'package:loginbasic/LoginPage.dart';
+import 'package:loginbasic/UserPage.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -88,7 +88,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
       end: 32.0
     ).animate(_scale2Controller)..addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: LoginPage()));
+        Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: UserPage()));
       }
     });
   }
@@ -111,7 +111,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                 height: 400,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/images/one.png'),
+                    image: AssetImage('assets/one.png'),
                     fit: BoxFit.cover
                   )
                 ),
@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                 height: 400,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/images/one.png'),
+                    image: AssetImage('assets/one.png'),
                     fit: BoxFit.cover
                   )
                 ),
@@ -139,7 +139,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
                 height: 400,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/images/one.png'),
+                    image: AssetImage('assets/one.png'),
                     fit: BoxFit.cover
                   )
                 ),
